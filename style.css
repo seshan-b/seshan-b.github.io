@@ -116,4 +116,10 @@ a.link:hover {
 	.container {
 		width: 100%;
 	}
+
+    .copyright {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
