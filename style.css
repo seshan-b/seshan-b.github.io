@@ -111,3 +111,9 @@ a.link:hover {
     font-size: 2rem;
 
 }
+
+@media(max-width: 600px) {
+	.container {
+		width: 100%;
+	}
+}
