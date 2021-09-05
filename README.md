@@ -1,2 +1,2 @@
 # seshan-b.github.io
-My Blog
+[Check out my blog](https://seshan-b.github.io/) 
