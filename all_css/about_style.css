@@ -126,6 +126,7 @@ body {
     width: 50%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .about-text h3 {
@@ -136,7 +137,8 @@ body {
 .about-text {
     padding: 15rem 15rem;
     line-height: 2.6;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .about-text li {
