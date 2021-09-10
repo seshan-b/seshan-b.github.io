@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
 
 * {
     margin: 0;
@@ -29,7 +29,7 @@ body {
     "footer footer footer footer";
     
     height: 100vh;
-    background: linear-gradient(rgba(175, 104, 104, 0.2),rgba(0, 0, 0, 0.5)) ,url(../images/background_cubes.jpg) no-repeat;
+    background: linear-gradient(rgba(184, 107, 119, 0.2),rgba(183, 134, 40, 0.5)) ,url(../images/background_cubes.jpg) no-repeat;
     background-size: cover;
     position: relative;   
       
@@ -78,7 +78,7 @@ body {
 }
 
 .nav a:hover {
-    color: 	rgb(0,139,139);
+    color: 	rgb(219, 165, 20);
     text-decoration: underline;
 }
 
@@ -105,14 +105,18 @@ body {
     font-size: 5rem;
     color:  rgba(14, 17, 17, 0.8);
     border: 2rem solid;
-    padding: 2.5rem;
-    border-radius: 50%;
-    background: rgb(34,193,195) linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(237,176,44,0.5) 100%);
+    padding: 20rem 2.5rem;
+    border-radius: 2rem;
+    background: rgb(219, 165, 20) linear-gradient(0deg, rgba(184, 107, 119 ,1) 0%, rgba(183, 134, 40,0.5) 100%);
+    font-family: "Permanent Marker", sans-serif;
+    opacity: 0.9;
 }
 
 
 .sprint a:hover  {
-    font-size: 8rem;
+    font-size: 5.2rem;
+    text-decoration: underline;
+    opacity: 1;
 }
 
 
@@ -224,12 +228,10 @@ body {
     .nav li {
         margin: 1rem;
         padding: 1rem 0;
-        border-radius: 5%;
+        border-radius: 1rem;
         background-color: #dfdfdf;;
         border: 4px rgba(14, 17, 17, 0.9) solid;
-        box-shadow: 13px 10px 32px -10px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 13px 10px 32px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 13px 10px 32px -10px rgba(0,0,0,0.75);
+        box-shadow: 13rem 10rem 32rem -10rem rgba(0, 0, 0, 0.8);
         opacity: 0.7;
         text-transform: uppercase;
         text-align: center;
@@ -246,6 +248,13 @@ body {
         justify-content: space-evenly;
         height: 100rem;
         margin-top: 50%;
+
+    }
+
+    
+    .sprint a  {
+
+        padding: 4rem 2.5rem;
 
     }
 

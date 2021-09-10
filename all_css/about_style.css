@@ -74,8 +74,9 @@ body {
 }
 
 .nav a:hover {
-    color: 	rgb(0,139,139);
+    color: 	rgb(219, 165, 20);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -98,7 +99,7 @@ body {
 .image {
     width: 50%;
     height: 100%;
-    background: rgb(34,193,195) linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(237,176,44,0.5) 100%);
+    background: rgb(219, 165, 20) linear-gradient(0deg, rgba(184, 107, 119 ,1) 0%, rgba(183, 134, 40,0.5) 100%);
 
 
 }

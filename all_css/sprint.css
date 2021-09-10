@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
 
 * {
     margin: 0;
@@ -30,7 +30,7 @@ body {
     "main main main main"
     "footer footer footer footer";
     
-    background: linear-gradient(rgba(175, 104, 104, 0.2),rgba(0, 0, 0, 0.5)) ,url(../images/background_cubes.jpg) no-repeat;
+    background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.5)) ,url(../images/background_cubes.jpg) no-repeat;
     background-size: cover;
     position: relative;   
       
@@ -78,7 +78,7 @@ body {
 }
 
 .nav a:hover {
-    color: 	rgb(0,139,139);
+    color: 	rgb(219, 165, 20);
     text-decoration: underline;
 }
 
@@ -89,7 +89,7 @@ body {
 
     margin: auto;
 
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.85);
     width: 80%;
 
 }
@@ -184,7 +184,7 @@ a.link:hover {
 .scroll-up-btn {
     width: 7rem;
     height: 7rem;
-    background-color: rgb(0,139,139);
+    background-color: rgb(219, 165, 20);
     position: fixed;
     bottom: 6rem;
     right: 5rem;
@@ -198,7 +198,7 @@ a.link:hover {
 }
 
 .scroll-up-btn:hover {
-    background-color: rgb(0,139,139);
+    background-color: rgb(219, 165, 20);
 }
 
 
