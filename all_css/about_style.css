@@ -116,7 +116,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-25%);
     border-radius: 50%;
     box-shadow: 0 3rem 5rem 0 rgba(0, 0, 0, 0.5);
     background-size: cover;
@@ -293,7 +292,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translateX(-75%);
+        transform: translateX(-100%);
         z-index: 5;
         
 
