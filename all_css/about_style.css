@@ -28,7 +28,6 @@ body {
  "main main main main"
  "footer footer footer footer";
 
- height: 100vh;
  background: linear-gradient(rgba(175, 104, 104, 0.4),rgba(0, 0, 0, 0.7)) ,url(../images/background_cubes.jpg) no-repeat;
  background-size: cover;
  position: relative;   
@@ -210,14 +209,7 @@ body {
   
     body {
         
-       position: relative;
-       display: grid;
-       grid-template-columns: 50% 50%;
-       grid-template-rows: auto auto;
-       grid-template-areas: 
-       "header header"
-        "main main"
-       "footer footer";
+
         background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
         background-size: cover;
         position: relative;   
@@ -276,6 +268,7 @@ body {
 
 
     .section-1 {
+        grid-area: main;
         flex-wrap: wrap;
         flex-direction: column;
     }
@@ -286,6 +279,7 @@ body {
         height: 50vh;
         position: relative;
     }
+
 
     .image-container {
         
@@ -300,7 +294,7 @@ body {
 
     .about-text {
         padding: 20rem 5em;
-        line-height: 2.6;
+        line-height: 2.1;
         font-size: 2.5rem;
     }
 
