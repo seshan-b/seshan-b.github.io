@@ -204,7 +204,7 @@ body {
 @media(max-width: 600px) {
 
     html {
-        font-size: calc(62.5% / 2);
+        font-size: calc(62.5% / 2.6);
     }
   
     body {
@@ -295,7 +295,7 @@ body {
     .about-text {
         padding: 20rem 5em;
         line-height: 2.1;
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 
     
@@ -311,23 +311,3 @@ body {
 
 
 
-@media(max-height: 750px) {
-
-
-    html {
-        font-size: calc(62.5% / 1.3);
-    }
-
-
-}
-
-
-@media(max-height: 850px) {
-
-
-    html {
-        font-size: calc(62.5% / 1.2);
-    }
-
-
-}
