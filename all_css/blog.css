@@ -27,8 +27,6 @@ body {
     "header header header header"
     "main main main main"
     "footer footer footer footer";
-    
-    height: 100vh;
     background: linear-gradient(rgba(184, 107, 119, 0.2),rgba(183, 134, 40, 0.5)) ,url(../images/background_cubes.jpg) no-repeat;
     background-size: cover;
     position: relative;   
@@ -179,14 +177,7 @@ body {
   
     body {
         
-       position: relative;
-       display: grid;
-       grid-template-columns: 50% 50%;
-       grid-template-rows: auto auto;
-       grid-template-areas: 
-       "header header"
-        "main main"
-       "footer footer";
+
         background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
         background-size: cover;
         position: relative;   
@@ -247,7 +238,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         height: 100rem;
-        margin-top: 50%;
+        margin-top: 75%;
 
     }
 
@@ -259,7 +250,7 @@ body {
     }
 
     .footer {
-        height:auto;
+        height:10rem;
     }
 
 
