@@ -344,7 +344,7 @@ body {
     .image-container {
         
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 50%;
         transform: translateX(-100%);
         z-index: 5;
@@ -353,9 +353,9 @@ body {
     }
 
     .profile-pic {
-        transform: scale(calc(100% / 1.5));
+        transform: scale(calc(100% / 1.8));
         animation-fill-mode: initial;
-        top: 50%;
+
     }
 
     .about-text {
