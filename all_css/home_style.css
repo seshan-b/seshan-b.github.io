@@ -19,21 +19,20 @@ html {
 
 body {
 
- position: relative;
+
  display: grid;
- grid-template-columns: 1fr 45% 45% 1fr;
- grid-template-rows: auto auto auto auto;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(3, auto);
  grid-template-areas: 
- "header header header header"
- "main main main main"
- "footer footer footer footer";
+ "header header header"
+ "main main main"
+ "footer footer footer";
 
  width: 100%;
  height: 100vh;
  background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.5)) ,url(../images/home-background.jpg) no-repeat;
- background-size: cover;
- position: relative;   
-   
+ background-size: cover; 
+ position: relative;  
 }
 
 
@@ -68,11 +67,15 @@ body {
 
 .nav a {
     color: #ffffff;
+
 }
 
 .nav a:hover {
     color: 	rgb(219, 165, 20);
     text-decoration: underline;
+    transition: color 0.5s, font-size 0.5s;
+    transition-timing-function: ease-in;
+    font-size: calc(100% * 1.1);
 }
 
 
@@ -129,6 +132,25 @@ body {
     align-content: center;
     justify-content: space-evenly;
     text-align: center;
+    animation-name: MoveFrames;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(1,.01,.23,.93);
+
+}
+
+/* CSS Animation to move frames */
+@keyframes MoveFrames {
+    0% {
+        transform: translateX(-1000%);
+    }
+
+    80% {
+        transform: translateX(120%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .section-blockquotes span.text-2 {
@@ -161,13 +183,6 @@ body {
 
 
 
-@media(max-width: 1800px) {
-
-
-
-}
-
-
 
 @media(max-width: 1200px) {
 
@@ -180,7 +195,7 @@ body {
 
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.4)) ,url(../images/home-background-1200px.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/home-background-1200px.jpg) no-repeat;
         background-size: cover;
         position: relative;   
           
@@ -198,7 +213,7 @@ body {
 
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.4)) ,url(../images/home-background-900px.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/home-background-900px.jpg) no-repeat;
         background-size: cover;
         position: relative;   
           
@@ -229,7 +244,7 @@ body {
 
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
         background-size: cover;
         position: relative;   
           
@@ -255,6 +270,7 @@ body {
     .section-1 h1 {
         margin-top: 75%;
         text-align: center;
+        font-size: calc(100% * 3);
 
     }
 
@@ -263,7 +279,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        font-size: 4rem;
+        font-size: calc(100% * 5);
         color: rgba(14, 17, 17, 0.8);
         text-align: center;
 

@@ -80,6 +80,9 @@ body {
 .nav a:hover {
     color: 	rgb(219, 165, 20);
     text-decoration: underline;
+    transition: color 0.5s, font-size 0.5s;
+    transition-timing-function: ease-in;
+    font-size: calc(100% * 1.1);
 }
 
 
@@ -116,28 +119,31 @@ body {
 
 
 
-
+.useful-links {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 0.5rem dashed #ccc;
+}
 
 .useful-links li  {
     font-size: 2.5rem;
-    margin: 1.1rem 3rem;
-    float: right;
+    margin: 1rem 0 2rem 8rem;
 
 }
 
 .useful-links li > i {
     margin-right: 2rem;
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(14, 17, 17, 0.2);
 
 }
 
 
 a.link {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(14, 17, 17, 0.5);
 }
 
 a.link:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgba(14, 17, 17, 1);
 }
 
 
@@ -202,11 +208,91 @@ a.link:hover {
 }
 
 
-@media(max-width: 1800px) {
 
+/* Identity Values */
+
+.q-a-blocks {
+    margin: 5rem 0;
+}
+
+.q-a-blocks h1 {
+    font-size: 4.5rem;
+    text-decoration: underline;
+}
+
+.q-a-blocks h3 {
+    font-size: 2.9rem;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.q-a-blocks {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: rgba(14, 17, 17, 0.5);
+
+}
+
+.questions {
+    margin: 3rem 0 8rem 0;
+
+
+    
+}
+
+/* .q-a-blocks blockquote::before,
+.q-a-blocks blockquote::before {
+    content: "";
+    border-left: 1rem solid rgba(14, 17, 17, 0.5);
+    text-indent: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+    height: 100%;
+    overflow-y: hidden;
+
+
+
+} */
+
+.q-a-blocks blockquote > div {
+    position: relative;
+    margin: 3rem 0 2rem 0;
+    border-left: 1rem solid rgba(14, 17, 17, 0.1);
+    padding: 1rem 0 3rem 2rem;
+
+}
+
+.q-a-blocks blockquote > div::before {
+    content: "Answer";
+    color: rgba(14, 17, 17, 0.9);
+    font-size: 1.7rem;
+    color: rgba(14, 17, 17, 0.5);
+    position: absolute;
+    top: -2.5rem;
+    left: -1rem;
+}
+
+
+
+.q-a-blocks > blockquote > div > ul,
+.q-a-blocks > blockquote > div > p {
+    color: rgba(14, 17, 17, 0.9);
+    font-size: 2rem;
+    padding-left: 2rem;
+    line-height: 2;
+    text-justify: inter-character;
 
 
 }
+
+.q-a-blocks > blockquote > div > ul > li {
+    display: block;
+}
+
+
+
+
+
 
 
 
@@ -291,12 +377,28 @@ a.link:hover {
         display: flex;
         flex-direction: column;
         
+        
     }
 
     .useful-links li  {
         margin: 1.1rem 0;
+        align-self: flex-start;
     
     }
+
+    .useful-links li:nth-child(1) {
+        order: 2;
+    }
+
+    .useful-links li:nth-child(2) {
+        order: 3;
+    }
+ 
+
+    .useful-links li:nth-child(3) {
+        order: 1;
+    }
+ 
  
 
 

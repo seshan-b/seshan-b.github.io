@@ -19,19 +19,19 @@ html {
 
 body {
 
- position: relative;
+ 
  display: grid;
- grid-template-columns: 1fr 45% 45% 1fr;
- grid-template-rows: auto auto auto auto;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(3, auto);
  grid-template-areas: 
- "header header header header"
- "main main main main"
- "footer footer footer footer";
+ "header header header"
+ "main main main"
+ "footer footer footer";
 
  background: linear-gradient(rgba(175, 104, 104, 0.4),rgba(0, 0, 0, 0.7)) ,url(../images/background_cubes.jpg) no-repeat;
- background-size: cover;
- position: relative;   
-   
+ background-size: cover; 
+ position: relative;
+
 }
 
 
@@ -51,6 +51,7 @@ body {
     padding: 0 2rem;
     font-weight: 900;
     box-shadow: -3rem 0 5rem 0 rgba(0, 0, 0, 0.95);
+    z-index: 5;
 }
 
 .logo {
@@ -75,9 +76,10 @@ body {
 .nav a:hover {
     color: 	rgb(219, 165, 20);
     text-decoration: underline;
-    cursor: pointer;
+    transition: color 0.5s, font-size 0.5s;
+    transition-timing-function: ease-in;
+    font-size: calc(100% * 1.1);
 }
-
 
 .section-1 {
 
@@ -97,15 +99,15 @@ body {
 
 .image {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background: rgb(219, 165, 20) linear-gradient(0deg, rgba(184, 107, 119 ,1) 0%, rgba(183, 134, 40,0.5) 100%);
 
 
 }
 
 .image-container {
-    width: 45rem;
-    height: 45rem;
+    width: 50%;
+    height: auto;
     position: relative;
 }
 
@@ -115,17 +117,70 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translateY(-50%);
     border-radius: 50%;
     box-shadow: 0 3rem 5rem 0 rgba(0, 0, 0, 0.5);
     background-size: cover;
+    animation-name: MoveProfilePic;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(1,.01,.23,.93);
+    animation-fill-mode: forwards;
+}
+
+
+/* CSS Animation to move frames */
+@keyframes MoveProfilePic {
+    0% {
+        transform: translateY(-1000%);
+        animation-timing-function: ease-in;
+        
+    }
+    
+
+    65% {
+        transform: translateY(80%);
+        animation-timing-function: ease-out;
+    }
+
+    70% {
+        transform: translateY(30%);
+        animation-timing-function: ease-in;
+    }
+
+    75% {
+        transform: translateY(80%);
+        animation-timing-function: ease-out;
+    }
+
+    80% {
+        transform: translateY(40%);
+        animation-timing-function: ease-in;
+    }
+
+    
+    85% {
+        transform: translateY(80%);
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        transform: translateY(45%);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translateY(50%);
+        animation-timing-function: ease-out;
+    }
 }
 
 .about {
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
 
 }
+
 
 .about-text h3 {
     font-size: 3.5rem;
@@ -169,16 +224,13 @@ body {
 }
 
 
-
-
-
 @media(max-width: 1800px) {
 
-
+    .about-text {
+        padding: 10rem 2em;
+    }
 
 }
-
-
 
 @media(max-width: 1200px) {
 
@@ -186,6 +238,14 @@ body {
     html {
         font-size: calc(62.5% / 1.5);
     }
+
+    
+    .about-text {
+        padding: 10rem 5em;
+    }
+
+    
+
 
 }
 
@@ -210,7 +270,7 @@ body {
     body {
         
 
-        background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
         background-size: cover;
         position: relative;   
           
@@ -240,7 +300,7 @@ body {
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        font-size: 4rem;
+        font-size: calc(100% * 5);
         color: rgba(14, 17, 17, 0.8);
         text-align: start;
         margin-top: -5.6rem;
@@ -292,35 +352,29 @@ body {
 
     }
 
+    .profile-pic {
+        transform: scale(calc(100% / 1.5));
+        animation-fill-mode: initial;
+        top: 50%;
+    }
+
     .about-text {
-        padding: 30rem 5em;
-        line-height: 2.1;
-        font-size: 2.2rem;
+        padding: 10rem 5em;
+        line-height: 2;
+        font-size: calc(100% * 0.8);
     }
 
     
-.footer {
+    .footer {
 
-    height: 10rem;
-}
-
-
-
-}
-
-
-@media(max-height: 800px) {
-
-    
-
-    .about-text {
-        padding: 15rem 5em;
-        line-height: 1.8;
+        height: 10rem;
     }
 
 
 
 }
+
+
 
 
 

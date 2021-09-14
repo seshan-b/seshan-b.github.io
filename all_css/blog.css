@@ -19,14 +19,14 @@ html {
 
 body {
         
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 45% 45% 1fr;
-    grid-template-rows: auto auto auto auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    
     background: linear-gradient(rgba(184, 107, 119, 0.2),rgba(183, 134, 40, 0.5)) ,url(../images/background_cubes.jpg) no-repeat;
     background-size: cover;
     position: relative;   
@@ -54,10 +54,11 @@ body {
     padding: 0 2rem;
     font-weight: 900;
     box-shadow: -3rem 0 5rem 0 rgba(0, 0, 0, 0.95);
+    z-index: 5;
 }
 
 .logo {
-    width: 20rem;
+    width: 18rem;
     content:url("../images/logo-light.png");
 }
 
@@ -78,8 +79,10 @@ body {
 .nav a:hover {
     color: 	rgb(219, 165, 20);
     text-decoration: underline;
+    transition: color 0.5s, font-size 0.5s;
+    transition-timing-function: ease-in;
+    font-size: calc(100% * 1.1);
 }
-
 
 
 
@@ -92,6 +95,7 @@ body {
     
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     
@@ -103,11 +107,12 @@ body {
     font-size: 5rem;
     color:  rgba(14, 17, 17, 0.8);
     border: 2rem solid;
-    padding: 20rem 2.5rem;
+    margin: 5rem 2.5rem;
     border-radius: 2rem;
     background: rgb(219, 165, 20) linear-gradient(0deg, rgba(184, 107, 119 ,1) 0%, rgba(183, 134, 40,0.5) 100%);
     font-family: "Permanent Marker", sans-serif;
     opacity: 0.9;
+    padding: 3rem;
 }
 
 
@@ -137,14 +142,6 @@ body {
 }
 
 
-
-
-
-@media(max-width: 1800px) {
-
-
-
-}
 
 
 
@@ -185,7 +182,7 @@ body {
     }  
 
     .logo {
-        width: 75rem;
+        transform: scale(calc(100% * 2));
         content:url("../images/logo-dark.png");
         padding: 10rem 0;
     }
@@ -234,23 +231,26 @@ body {
 
 
     .section-1 {
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 100rem;
-        margin-top: 75%;
+        justify-content: flex-end;
+       
 
     }
 
     
     .sprint a  {
 
-        padding: 4rem 2.5rem;
+        margin: 4rem 2.5rem;
+        
 
     }
 
+    .sprint h1:nth-child(n) {
+        margin: 8rem 0 10rem 0;
+    }
+
     .footer {
-        height:10rem;
+        height: 10rem;
     }
 
 
