@@ -65,7 +65,7 @@ body {
 
 .image-container {
     width: 50%;
-    height: auto;
+    height: 50%;
     position: relative;
 }
 
@@ -73,7 +73,7 @@ body {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
@@ -91,45 +91,41 @@ body {
 @keyframes MoveProfilePic {
     0% {
         transform: translateY(-1000%);
-        animation-timing-function: ease-in;
         
     }
     
 
     65% {
-        transform: translateY(55%);
-        animation-timing-function: ease-out;
+        transform: translateY(25%);
     }
 
     70% {
-        transform: translateY(30%);
+        transform: translateY(10%);
 
     }
 
     75% {
-        transform: translateY(55%);
-        animation-timing-function: ease-out;
+        transform: translateY(25%);
     }
 
     80% {
-        transform: translateY(40%);
+        transform: translateY(15%);
 
     }
 
     
     85% {
-        transform: translateY(55%);
-        animation-timing-function: ease-out;
+        transform: translateY(25%);
     }
 
     95% {
-        transform: translateY(45%);
+        transform: translateY(20%);
 
     }
 
     100% {
-        transform: translateY(50%);
-        animation-timing-function: ease-out;
+        transform: translateY(25%);
+        animation-timing-function: ease-in;
     }
 }
 
