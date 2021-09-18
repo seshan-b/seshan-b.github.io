@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!--Enable if you want to debug-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">-->
+    <link rel="stylesheet" href="../all_css/pages.css" />
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="../blog/blog.html" class="nav-link">Blog</a></li>
+            <li><a href="../about.html" class="nav-link">About Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Icon -->
+    <div class="menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+    <!-- End Menu Icon -->
+
+    <section class="section-1" id="home">
+        <div class="container">
+            <ul class="useful-links">
+                <li>
+                    <i class="fas fa-arrow-right"></i><a href="#variables-datatypes" class="link">Variables &amp;
+                        Datatypes</a>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i><a href="#declaring-function" class="link">Declaring a
+                        function</a>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i><a href="#math-operations" class="link">Math Operations in
+                        JavaScript</a>
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i><a href="../blog/blog.html" class="link">Back to Blog</a>
+                </li>
+            </ul>
+
+            <div class="variables-datatypes" id="variables-datatypes">
+                <h3>JavaScript Data types</h3>
+                <img class="reference-images" src="../images/javascript_datatypes.png" alt="Javascript Datatypes" />
+                <p>
+                    There are 2 different data types in JavaScript. In JavaScript, all
+                    numbers are encoded as double precision floating point numbers,
+                    following the international IEEE 754 standard. This format stores
+                    numbers in 64 bits, where the number, the fraction (AKA mantissa),
+                    is stored in bits 0 to 51, the exponent in bits 52 to 62, and the
+                    sign in bit 63. In other programming languages floats are a separate
+                    primitive datatype. In JavaScript they are encoded the same.
+                </p>
+
+                <h3>Primitive and Non-Primitive (Composite types)</h3>
+                <div class="data-display-x2-list">
+                    <figure>
+                        <figcaption>List of Primitive Datatypes</figcaption>
+
+                        <ul class="info-lists">
+                            <li>Number</li>
+                            <li>float</li>
+                            <li>Boolean</li>
+                            <li>String</li>
+                            <li>Null</li>
+                            <li>Undefined</li>
+                            <li>Symbol</li>
+                        </ul>
+                    </figure>
+                    <figure>
+                        <figcaption>List of Non-Primitive (Composite types)</figcaption>
+
+                        <ul class="info-lists">
+                            <li>Array</li>
+                            <li>Object</li>
+                            <li>Function</li>
+                            <li>Date</li>
+                            <li>Regex</li>
+                        </ul>
+                    </figure>
+                </div>
+
+                <img class="reference-images" src="../images/javascript_datatypes_example.png" alt="Javascript Datatypes Example" />
+            </div>
+            <div class="declaring-function" id="declaring-function">
+                <h3>Declaring a function</h3>
+
+                <img class="reference-images" src="../images/javascript_declaring_functions.png" alt="" />
+            </div>
+            <div class="math-operations" id="math-operations">
+                <h3>Math Operations</h3>
+
+                <img class="reference-images" src="../images/javascript_math_BODMAS-1.png" alt="" />
+                <img class="reference-images" src="../images/javascript_math_BODMAS-2.png" alt="" />
+                <img class="reference-images" src="../images/javascript_math_BODMAS-3.png" alt="" />
+
+                <p>
+                    Math operations follow the BODMAS method. This is when you are doing more than one math calculation in a statement. 
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="copyright">Copyright &copy; Created by Seshan</div>
+    </footer>
+
+    <a href="#home" class="scroll-up-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="../all.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
 
+
+
+@import url("navbar.css");
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -38,52 +45,11 @@ body {
  }  
 
 
- .navbar {
-
-    grid-area: header;
-
-    background-color: rgba(14, 17, 17, 0.9);
-    height: 10rem;
-    grid-area: header;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    font-weight: 900;
-    box-shadow: -3rem 0 5rem 0 rgba(0, 0, 0, 0.95);
-}
 
 
 
-.logo {
-    width: 20rem;
-    content:url("../images/logo-light.png");
-}
 
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-    font-size: 2.5rem;
-    color: #ffffff;
-
-}
-
-.nav a {
-    color: #ffffff;
-}
-
-.nav a:hover {
-    color: 	rgb(219, 165, 20);
-    text-decoration: underline;
-    transition: color 0.5s, font-size 0.5s;
-    transition-timing-function: ease-in;
-    font-size: calc(100% * 1.1);
-}
 
 
 .section-1 {
@@ -95,6 +61,10 @@ body {
     background-color: rgba(255, 255, 255, 0.85);
     width: 80%;
 
+}
+
+.section-1 h3 {
+    margin-top: 3rem;
 }
 
 .container {
@@ -147,9 +117,15 @@ a.link:hover {
 }
 
 
-.terminal-commands, .git-stuff, .html-stuff, .css-stuff {
+.terminal-commands, 
+.git-stuff, 
+.html-stuff, 
+.css-stuff, 
+.variables-datatypes,
+.declaring-function,
+.math-operations {
     font-size: 2rem;
-    padding-top: 10rem;
+    padding-top: 18rem;
     line-height: 1.6;
 }
 
@@ -239,20 +215,7 @@ a.link:hover {
     
 }
 
-/* .q-a-blocks blockquote::before,
-.q-a-blocks blockquote::before {
-    content: "";
-    border-left: 1rem solid rgba(14, 17, 17, 0.5);
-    text-indent: 2rem;
-    position: absolute;
-    top: 2rem;
-    left: 3.5rem;
-    height: 100%;
-    overflow-y: hidden;
 
-
-
-} */
 
 .q-a-blocks blockquote > div {
     position: relative;
@@ -292,6 +255,19 @@ a.link:hover {
 
 
 
+.data-display-x2-list {
+    margin: 2rem 0 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.data-display-x2-list ul > li {
+    list-style-type: circle;
+    list-style-position: inside;
+
+}
 
 
 
@@ -325,7 +301,7 @@ a.link:hover {
 @media(max-width: 600px) {
 
     html {
-        font-size: calc(62.5% / 1.5);
+        font-size: calc(62.5% / 2);
     }
   
     body {
@@ -347,30 +323,10 @@ a.link:hover {
     .section-1 {
 
         width: 100%;
+        font-size: calc(100% * 1.5);
     
     }
 
-    .logo {
-        width: 60rem;
-        content:url("../images/logo-dark.png");
-        padding: 2rem 0;
-    }
-
-    .navbar {
-
-        position: absolute;
-        top :0;
-        background-color: rgba(14, 17, 17, 0);
-        flex-direction: column;
-        box-shadow: none;
-        z-index: 2;
-        height: 20%;
-    }
-
-    .nav {
-        display: none;
-        visibility: hidden;
-    }
 
 
     .useful-links {

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
-
+@import url("navbar.css");
 
 * {
     margin: 0;
@@ -22,7 +22,7 @@ body {
  
  display: grid;
  grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(3, auto);
+ grid-auto-rows: min-content;
  grid-template-areas: 
  "header header header"
  "main main main"
@@ -35,55 +35,13 @@ body {
 }
 
 
-.navbar {
-
-    grid-area: header;
-
-    background-color: rgba(14, 17, 17, 0.9);
-    height: 10rem;
-    grid-area: header;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-    font-weight: 900;
-    box-shadow: -3rem 0 5rem 0 rgba(0, 0, 0, 0.95);
-    z-index: 5;
-}
-
-.logo {
-    width: 20rem;
-    content:url("../images/logo-light.png");
-}
 
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    width: 25%;
-    font-size: 2.5rem;
-    color: #ffffff;
 
-}
-
-.nav a {
-    color: #ffffff;
-}
-
-.nav a:hover {
-    color: 	rgb(219, 165, 20);
-    text-decoration: underline;
-    transition: color 0.5s, font-size 0.5s;
-    transition-timing-function: ease-in;
-    font-size: calc(100% * 1.1);
-}
 
 .section-1 {
 
-    height: 100vh;
+    height: 100%;
     font-size: 3rem;
 
     grid-area: main;
@@ -125,6 +83,7 @@ body {
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(1,.01,.23,.93);
     animation-fill-mode: forwards;
+
 }
 
 
@@ -138,34 +97,34 @@ body {
     
 
     65% {
-        transform: translateY(80%);
+        transform: translateY(55%);
         animation-timing-function: ease-out;
     }
 
     70% {
         transform: translateY(30%);
-        animation-timing-function: ease-in;
+
     }
 
     75% {
-        transform: translateY(80%);
+        transform: translateY(55%);
         animation-timing-function: ease-out;
     }
 
     80% {
         transform: translateY(40%);
-        animation-timing-function: ease-in;
+
     }
 
     
     85% {
-        transform: translateY(80%);
+        transform: translateY(55%);
         animation-timing-function: ease-out;
     }
 
     95% {
         transform: translateY(45%);
-        animation-timing-function: ease-in;
+
     }
 
     100% {
@@ -188,7 +147,7 @@ body {
 }
 
 .about-text {
-    padding: 15rem 15rem;
+    padding: 20rem 15rem;
     line-height: 2.6;
     font-size: 2rem;
     font-weight: 600;
@@ -225,9 +184,12 @@ body {
 
 
 @media(max-width: 1800px) {
+    html {
+        font-size: calc(62.5% / 1.1);
+    }
 
     .about-text {
-        padding: 10rem 2em;
+        padding: 15rem 2em;
     }
 
 }
@@ -264,7 +226,7 @@ body {
 @media(max-width: 600px) {
 
     html {
-        font-size: calc(62.5% / 2.6);
+        font-size: calc(62.5% / 2);
     }
   
     body {
@@ -276,55 +238,7 @@ body {
           
     }  
 
-    .logo {
-        width: 75rem;
-        content:url("../images/logo-dark.png");
-        padding: 10rem 0;
-    }
 
-    .navbar {
-
-        position: absolute;
-        top :0;
-        background-color: rgba(14, 17, 17, 0);
-        flex-direction: column;
-        box-shadow: none;
-        z-index: 2;
-        height: 20%;
-    }
-
-
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        font-size: calc(100% * 5);
-        color: rgba(14, 17, 17, 0.8);
-        text-align: start;
-        margin-top: -5.6rem;
-
-    
-    }
-
-    .nav li {
-        margin: 1rem;
-        padding: 1rem 0;
-        border-radius: 5%;
-        background-color: #dfdfdf;;
-        border: 4px rgba(14, 17, 17, 0.9) solid;
-        box-shadow: 13px 10px 32px -10px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 13px 10px 32px -10px rgba(0,0,0,0.75);
-        -moz-box-shadow: 13px 10px 32px -10px rgba(0,0,0,0.75);
-        opacity: 0.7;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    .nav a {
-        color: rgba(14, 17, 17, 0.95);
-    }
 
 
     .section-1 {
@@ -344,24 +258,24 @@ body {
     .image-container {
         
         position: absolute;
-        top: 65%;
+        top: 25%;
         left: 50%;
         transform: translateX(-100%);
-        z-index: 5;
+        z-index: 1;
         
 
     }
 
     .profile-pic {
-        transform: scale(calc(100% / 1.8));
+        transform: scale(calc(100% / 1));
         animation-fill-mode: initial;
+        transition: animation-fill-mode 1s ease-out;
 
     }
 
     .about-text {
         padding: 10rem 5em;
         line-height: 2;
-        font-size: calc(100% * 0.8);
     }
 
     
