@@ -42,7 +42,8 @@ body {
 
 .section-1 {
 
-
+    min-height: 100vh;
+    max-height: auto;
 
     grid-area: main;
 

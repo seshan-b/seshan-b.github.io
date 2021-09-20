@@ -41,7 +41,9 @@ body {
 
 .section-1 {
 
-    height: 100%;
+    min-height: 100vh;
+    max-height: auto;
+
     font-size: 3rem;
 
     grid-area: main;
