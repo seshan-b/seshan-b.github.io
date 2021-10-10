@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
 @import url("navbar.css");
-
 * {
     margin: 0;
     padding: 0;
@@ -14,42 +13,28 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-
 }
 
 body {
-
-
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(3, auto);
- grid-template-areas: 
- "header header header"
- "main main main"
- "footer footer footer";
-
- width: 100%;
- height: 100vh;
- background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.5)) ,url(../images/home-background.jpg) no-repeat;
- background-size: cover; 
- position: relative;  
-
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(219, 165, 20, 0.2), rgba(0, 0, 0, 0.5)), url(../images/home-background.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .section-1 {
-
     height: 100vh;
     font-size: 3rem;
-
     grid-area: main;
-    
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .section-1 h1 {
@@ -57,16 +42,12 @@ body {
     font-family: "Permanent Marker", sans-serif;
 }
 
-
 .section-blockquotes {
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
     height: 50%;
-
-
 }
 
 .section-text {
@@ -76,13 +57,12 @@ body {
     height: 30rem;
     width: 28rem;
     border-radius: 10%;
-    background-color: #dfdfdf;;
+    background-color: #dfdfdf;
+    ;
     box-shadow: 13rem 10rem 32rem -10ren rgba(0, 0, 0, 0.75);
     opacity: 0.9;
     text-transform: uppercase;
 }
-
-
 
 .section-blockquotes li {
     display: flex;
@@ -92,20 +72,19 @@ body {
     text-align: center;
     animation-name: MoveFrames;
     animation-duration: 3s;
-    animation-timing-function: cubic-bezier(1,.01,.23,.93);
-
+    animation-timing-function: cubic-bezier(1, .01, .23, .93);
 }
 
+
 /* CSS Animation to move frames */
+
 @keyframes MoveFrames {
     0% {
         transform: translateX(-1000%);
     }
-
     80% {
         transform: translateX(120%);
     }
-
     100% {
         transform: translateX(0);
     }
@@ -116,14 +95,11 @@ body {
     font-weight: 400;
 }
 
-
 .footer {
     grid-area: footer;
-
     position: absolute;
     bottom: 0;
     width: 100%;
-
     display: flex;
     align-content: center;
     justify-content: center;
@@ -137,93 +113,53 @@ body {
     color: #ffffff;
 }
 
-
-
-
-
-
 @media(max-width: 1200px) {
-
-
     html {
         font-size: calc(62.5% / 1.5);
     }
-
     body {
-
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/home-background-1200px.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2), rgba(0, 0, 0, 0.4)), url(../images/home-background-1200px.jpg) no-repeat;
         background-size: cover;
-        position: relative;   
-          
+        position: relative;
     }
-
 }
 
 @media(max-width: 900px) {
-
     html {
         font-size: calc(62.5% / 1.8);
     }
-
     body {
-
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/home-background-900px.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2), rgba(0, 0, 0, 0.4)), url(../images/home-background-900px.jpg) no-repeat;
         background-size: cover;
-        position: relative;   
-          
+        position: relative;
     }
-
-
-
-    
     .section-text {
-
         height: 30rem;
         width: 100%;
-
     }
-
-
-
 }
 
-
 @media(max-width: 600px) {
-
     html {
         font-size: calc(62.5% / 2);
     }
-  
     body {
-
         width: 100%;
         height: 100%;
-        background: linear-gradient(rgba(219, 165, 20, 0.2),rgba(0, 0, 0, 0.4)) ,url(../images/background_cubes.jpg) no-repeat;
+        background: linear-gradient(rgba(219, 165, 20, 0.2), rgba(0, 0, 0, 0.4)), url(../images/background_cubes.jpg) no-repeat;
         background-size: cover;
-        position: relative;   
-          
-    }  
-
-
+        position: relative;
+    }
     .section-blockquotes {
         display: none;
         visibility: hidden;
     }
-
-
-
     .section-1 h1 {
         text-align: center;
         font-size: calc(100% * 3);
-
     }
-
-
-
-
 }
-

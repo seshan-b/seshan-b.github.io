@@ -23,7 +23,6 @@ body {
     grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
     background: linear-gradient(rgba(219, 165, 20, 0.2), rgba(0, 0, 0, 0.5)), url(../images/background_cubes.jpg) no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .section-1 {
@@ -87,14 +86,7 @@ a.link:hover {
     color: rgba(14, 17, 17, 1);
 }
 
-.terminal-commands,
-.git-stuff,
-.html-stuff,
-.css-stuff,
-.variables-datatypes,
-.declaring-function,
-.math-operations,
-.dom {
+.content-display-sections {
     font-size: 2rem;
     padding-top: 18rem;
     line-height: 1.6;
@@ -105,7 +97,14 @@ a.link:hover {
     font-weight: 600;
 }
 
-.git-commands-list code {
+.terminal-commands-list span,
+.git-commands-list span {
+    color: #aaaaaa;
+    font-weight: 600;
+}
+
+.git-commands-list code,
+.git-paragraph code {
     color: #15bb06;
     font-weight: 600;
 }
@@ -113,6 +112,14 @@ a.link:hover {
 .reference-images {
     margin: 1rem 0 6rem 0;
     width: 100%;
+    height: auto;
+    background-size: contain;
+    border-radius: 1rem;
+}
+
+.reference-images-x2-row {
+    margin: 1rem 0 6rem 0;
+    width: 48%;
     height: auto;
     background-size: contain;
     border-radius: 1rem;
@@ -194,7 +201,6 @@ a.link:hover {
     content: "Answer";
     color: rgba(14, 17, 17, 0.9);
     font-size: 1.7rem;
-    color: rgba(14, 17, 17, 0.5);
     position: absolute;
     top: -2.5rem;
     left: -1rem;
@@ -257,7 +263,6 @@ ul.list-links li {
         grid-template-areas: "header header" "main main" "footer footer";
         background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.4)), url(../images/background_cubes.jpg) no-repeat;
         background-size: cover;
-        position: relative;
     }
     .section-1 {
         width: 100%;
