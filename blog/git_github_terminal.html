@@ -85,6 +85,7 @@
                     <li><code>q </code> – Exit file.</li>
                     <li><code>ping 10.1.1.1 </code> – Check to see if you are connected and your computer is pinging to the internet.</li>
                     <li><code>Ipconfig </code> - Displays your DNS info.</li>
+                    <li><code>mklink /J [destinationfolder] [referencefolder]  </code> – You can create reference folders. By doing this you can access everything in one place without creating multiple folders.</li>
                 </ul>
 
             </div>
@@ -99,7 +100,7 @@
                     <code>git config --global user.name [your-github-user-name"]</code>
                     <br /> Insert the email on your Github account inside the double quotation marks<br />
                     <code>git config --global user.email [your-user-email"]</code> <br /> Stores your credentials.<br />
-                    <code>git config --global credentials.helper store</code>
+                    <code>git config --global credential.helper store </code>
                     <br /> Note: You can also manually edit the .config file in the .git folder in the root of your local project repository. This is a better way to do it. So, you can only make changes to the repository without making changes on all
                     your other repositories.
 
@@ -155,6 +156,7 @@
                     </li>
                     <li><code>git checkout -b [branchname] </code> – Checkout from current branch and create a new branch.
                     </li>
+                    <li><code>git checkout -b [branchname]  origin/ [branchname]  </code> – create a new branch off remote.</li>
                     <li><code>git diff </code> | <code> --staged</code> – See changes made between each other unstaged or staged files.</li>
                     <li><code>git merge [branchname] </code> – Merge from another local branch.</li>
                     <li><code>git rebase [branchname] </code>– Brings your current branch up to date with a branch already ahead of your branch.</li>
