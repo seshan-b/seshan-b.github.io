@@ -85,7 +85,12 @@
                     <li><code>q </code> – Exit file.</li>
                     <li><code>ping 10.1.1.1 </code> – Check to see if you are connected and your computer is pinging to the internet.</li>
                     <li><code>Ipconfig </code> - Displays your DNS info.</li>
-                    <li><code>mklink /J [destinationfolder] [referencefolder]  </code> – You can create reference folders. By doing this you can access everything in one place without creating multiple folders.</li>
+                    <li><code>mklink /J [destinationfolder] [referencefolder]  </code> | <code>/D [destinationfolder] [referencefolder]   </code> – You can create reference folders. By doing this you can access everything in one place without creating multiple
+                        folders.
+                        <span>/J</span> These are junction Links. <span>/D</span> These are directory links. You can use directory link on network folders, but you cannot with junction links. Use junction links for local folder and use directory links
+                        for local to network folders.
+
+                    </li>
                 </ul>
 
             </div>
