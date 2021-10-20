@@ -98,7 +98,8 @@ a.link:hover {
 }
 
 .terminal-commands-list span,
-.git-commands-list span {
+.git-commands-list span,
+.git-paragraph span {
     color: #aaaaaa;
     font-weight: 600;
 }

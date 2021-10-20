@@ -97,15 +97,28 @@
 
 
             <div class="content-display-sections" id="git-stuff">
+
+                <h3>Setup SSH on GIT and GitHub</h3>
+                <div class="git-paragraph">
+                    Note: Make sure you are in your home default user directory
+                    <br />
+                    <code>ssh-keygen -t rsa -b 4096 </code>
+                    <br/> This creates your ssh keygen. It will prompt you to enter a passphrase. This is sort of like a password for your ssh keygen. Once created it should be stored in your user folder.
+                    <br/>
+                    <code>cd .ssh </code> Once you are in this folder. Open <span>id_rsa.pub </span> copy this key and save it on your GitHub. Once you saved it every time you pull a repository you don’t have to pass it credentials because your ssh keys
+                    are stored in GitHub.
+                    <br/>To delete your ssh keys you can delete the <span>.ssh </span> folder. To regenerate ssh keys run through these steps again.
+                </div>
+
                 <h3>Setup GIT</h3>
                 <div class="git-paragraph">
-                    Note: Make sure you are in your home default home directory.
+                    Note: if you set up SSH git you don’t need to pass in your username and password &#40;access token&#41;. Because every time you push and pull from GitHub it will ask for username and password &#40;access token&#41;.
+                    <br/> To set up global configuration.
                     <br /> Insert your username inside the double quotation marks.
                     <br />
                     <code>git config --global user.name [your-github-user-name"]</code>
                     <br /> Insert the email on your Github account inside the double quotation marks<br />
-                    <code>git config --global user.email [your-user-email"]</code> <br /> Stores your credentials.<br />
-                    <code>git config --global credential.helper store </code>
+                    <code>git config --global user.email [your-user-email"]</code>
                     <br /> Note: You can also manually edit the .config file in the .git folder in the root of your local project repository. This is a better way to do it. So, you can only make changes to the repository without making changes on all
                     your other repositories.
 
