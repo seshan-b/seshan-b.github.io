@@ -153,13 +153,14 @@
 
 
                     <li><code>git add --all </code> | <code> -A </code> | </code> .</code> – Add new files. This is called staging.</li>
-                    <li><code>git commit -m [commitmessage] </code> | <code> --amend -m [commitmessage] </code> – Commit changes to repository. Amend previous commit message.</li>
+                    <li><code>git commit -m [commitmessage] </code> | <code> --amend -m [commitmessage] </code> ] – Commit changes to repository. Amend previous commit message. Make sure you put commit message in double quotes.</li>
                     <li><code> git commit -a -m</code> – Bypass staging and just commit message. Stage and commit together.
                     </li>
                     <li><code>git status</code> – Check to see if there are any staged files. If in red you need to stage them.</li>
-                    <li><code>git push --set-upstream origin [branchname] </code>– If the branch is not yet tracked, and only resides on the local machine. </li>
+
                     <li><code>git push</code> – Push commits to remote repository.</li>
-                    <li><code> git push -u origin [branchname] </code> – Push your local branch to remote repository with upstearm.</li>
+                    <li><code> git push -u origin [branchname] </code> – Push your local branch to remote repository with tracking upstream.</li>
+                    <li><code> git push -u origin [local_branch]:[remote_branch] </code> – Push your local branch to another remote repository branch with tracking upstream.</li>
                     <li><code>git remote -v </code>– Show the associated remote repositories and their stored name and show links to branch. </li>
                     <li><code>git remote show origin</code> – Show if your remote branches are tracked. Get more info about the remote repository.</li>
                     <li><code>git push -d origin [branchname] </code>– Delete a remote branch. </li>
