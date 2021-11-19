@@ -64,7 +64,8 @@
                     <li><code> ls </code> | <code>-a </code>| <code>-al</code> – <span>ls</span> List Directories.
                         <span>ls -a</span> List All including hidden. <span>ls -al</span>List All Files with file permissions.
                     </li>
-                    <li><code>start . </code> | <code>[filename]  </code> – Open GUI of Folder. Open file name.</li>
+                    <li><code>start . </code> | <code>[filename]  </code> – Open GUI of Folder. Open file name. (This only works on windows)</li>
+                    <li><code>explorer.exe .  </code> | <code>[filename]  </code> – Open GUI of Folder (This will work on Linux and Windows and Linux Subsystem).</li>
                     <li><code> curl [weblink] -o [newname] </code> – Saves a file from the web to your local folder you are in.</li>
                     <li><code> echo [some text you want to write]</code> – Output on the next line.</li>
                     <li><code>history </code> – See history.</li>
@@ -77,7 +78,7 @@
                     <li><code> cp -r [directoryname] [newdirectorylocation] </code>– Copy directory content to new location.
                     </li>
                     <li><code> mv [sourceitem] [destinationitem] </code> – Move Items Files and Directories</li>
-                    <li><code>find . -iname * [text] * </code>– Search files within directory and sub directories. The * is used for anything either before or after the text. e.g. *text (after) text* (before).</li>
+                    <li><code>find . -iname * [text] * </code>– Search files within directory and sub directories. The * is used for anything either before or after the text. E.g. *text (after) text* (before). Note: Make sure you wrap your search text in quotes. E.g. <span>“search-term*”</span> or  <span>“**search-term”</span> otherwise you might get back nothing or an error.</li>
                     <li><code> unzip [filename] </code> – Unzip file.</li>
                     <li><code>cat [filename]</code> – Prints to screen what is in the file.</li>
                     <li><code>clear </code> – Clear screen.</li>
